@@ -1,4 +1,6 @@
-require("dotenv").config();
+import path from "path";
+
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 import express from "express";
 import { sequelize } from "./sequelize";
 
